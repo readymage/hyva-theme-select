@@ -3,15 +3,24 @@
     "description": "Magento 2 module to set Hyva/default theme as default theme for main storeview",
     "type": "magento2-module",
     "license": [
-        "OSL-3.0",
-        "AFL-3.0"
+        "OSL-3.0"
     ],
+    "keywords": [
+        "magento2",
+        "ReadyMage"
+    ],
+    "require": {
+      "magento/framework": "*"
+    },
+    "support": {
+        "email": "info@scandiweb.com"
+    },
     "autoload": {
         "files": [
-            "registration.php"
+            "src/registration.php"
         ],
         "psr-4": {
-            "ReadyMage\\HyvaThemeSelect\\": ""
+            "ReadyMage\\HyvaThemeSelect\\": "src"
         }
     }
 }
